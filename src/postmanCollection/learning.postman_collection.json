@@ -1,0 +1,1487 @@
+{
+	"info": {
+		"_postman_id": "713b01a3-7326-4fc1-b013-dd2ce82894d1",
+		"name": "learning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15590033"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/account",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"iman\",\r\n    \"firstname\": \"iman\",\r\n    \"email\": \"iman@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/account",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"account"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/account",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"iman\",\r\n    \"firstname\": \"iman\",\r\n    \"email\": \"iman@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/account",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"account"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 20:59:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"iman\",\n    \"firstname\": \"iman\",\n    \"email\": \"iman@gmail.com\",\n    \"password\": \"password\"\n}"
+				},
+				{
+					"name": "http://localhost:8080/account",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"iman\",\r\n    \"firstname\": \"iman\",\r\n    \"email\": \"iman@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/account",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"account"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 21:00:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"path\": \"/account\",\n    \"message\": \"email already exists\",\n    \"statusCode\": 500,\n    \"localDateTime\": \"2024-12-04T22:00:01.8359077\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/token",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"email\": \"admin@admin.com\",\r\n      \"password\": \"password\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"email\": \"iman@gmail.com\",\r\n      \"password\": \"password\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 21:00:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpbWFuQGdtYWlsLmNvbSIsImlhdCI6MTczMzM0NjAxNiwiaXNzIjoiand0Lmp3dCIsImV4cCI6MTczMzM2NDAxNn0.qn8r71n0o7mg2zwBThoAkHdQF0yb4eomoXd2wFnfSyo\",\n    \"login\": \"iman@gmail.com\",\n    \"expiresIn\": \"2024-12-04T23:00:16.9561908\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpbWFuQGdtYWlsLmNvbSIsImlhdCI6MTczMzQyNzE4MSwiaXNzIjoiand0Lmp3dCIsImV4cCI6MTczMzQ0NTE4MX0.9zqOI0tTB2KzvNCJk3P3-raRm8jv4LNccOdzX4C1klc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3MzMyOTg2ODQsImlzcyI6Imp3dC5qd3QiLCJleHAiOjE3MzMzMTY2ODR9.3GmMf6l2kz5BkUCQR7BxbtHjTeqWbu3DUGztxpIdKYA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"PRD801\",\r\n    \"name\": \"Produit 1 \",\r\n    \"description\": \"Produit 1 \",\r\n    \"image\": null,\r\n    \"category\": \"Produit alimentaire\",\r\n    \"price\": 100,\r\n    \"quantity\": 20,\r\n    \"internalReference\": \"PRD801\",\r\n    \"shellId\": null,\r\n    \"inventoryStatus\": \"INSTOCK\",\r\n    \"rating\": 8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/products",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"PRD802\",\r\n    \"name\": \"Produit 2 \",\r\n    \"description\": \"Produit 1 \",\r\n    \"image\": null,\r\n    \"category\": \"Produit alimentaire\",\r\n    \"price\": 100,\r\n    \"quantity\": 20,\r\n    \"internalReference\": \"PRD802\",\r\n    \"shellId\": null,\r\n    \"inventoryStatus\": \"INSTOCK\",\r\n    \"rating\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 21:00:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3.1974590638621296824826037231e+28,\n    \"code\": \"PRD802\",\n    \"name\": \"Produit 2 \",\n    \"description\": \"Produit 1 \",\n    \"image\": null,\n    \"category\": \"Produit alimentaire\",\n    \"price\": 100,\n    \"quantity\": 20,\n    \"internalReference\": \"PRD802\",\n    \"shellId\": 0,\n    \"inventoryStatus\": \"INSTOCK\",\n    \"rating\": 8,\n    \"createdAt\": \"2024-12-04T22:00:31.8942867\",\n    \"updatedAt\": null\n}"
+				},
+				{
+					"name": "Vous n'avez pas les droits nécessaires!",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"PRD801\",\r\n    \"name\": \"Produit 1 \",\r\n    \"description\": \"Produit 1 \",\r\n    \"image\": null,\r\n    \"category\": \"Produit alimentaire\",\r\n    \"price\": 100,\r\n    \"quantity\": 20,\r\n    \"internalReference\": \"PRD801\",\r\n    \"shellId\": null,\r\n    \"inventoryStatus\": \"INSTOCK\",\r\n    \"rating\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Dec 2024 19:27:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"path\": \"/api/products\",\n    \"message\": \"Vous n'avez pas les droits nécessaires! \",\n    \"statusCode\": 403,\n    \"localDateTime\": \"2024-12-05T20:27:56.0207569\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/products:id=675013e1f8ea3c57caf5127d",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3MzMzMjU5MjMsImlzcyI6Imp3dC5qd3QiLCJleHAiOjE3MzMzNDM5MjN9.oKcCSZ879vAEfR5crRnaK7Kv5TGus-j8p_xznbNLfVo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/products/31974246542236886755933212986",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"31974246542236886755933212986"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/products:id=675013e1f8ea3c57caf5127d",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/products/31974584139265136117162379577",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products",
+								"31974584139265136117162379577"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 21:02:14 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3.1974584139265136117162379577e+28,\n    \"code\": \"PRD802\",\n    \"name\": \"Produit 2 \",\n    \"description\": \"Produit 1 \",\n    \"image\": null,\n    \"category\": \"Produit alimentaire\",\n    \"price\": 100,\n    \"quantity\": 20,\n    \"internalReference\": \"PRD802\",\n    \"shellId\": 0,\n    \"inventoryStatus\": \"LOWSTOCK\",\n    \"rating\": 8,\n    \"createdAt\": \"2024-12-04T21:54:39.407\",\n    \"updatedAt\": \"2024-12-04T21:57:36.704\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/products:id=675013e1f8ea3c57caf5127d",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3MzMzMjU5MjMsImlzcyI6Imp3dC5qd3QiLCJleHAiOjE3MzMzNDM5MjN9.oKcCSZ879vAEfR5crRnaK7Kv5TGus-j8p_xznbNLfVo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/products/31974246542236886755933212986",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"31974246542236886755933212986"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/products:id=675013e1f8ea3c57caf5127d",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3MzMzMjU5MjMsImlzcyI6Imp3dC5qd3QiLCJleHAiOjE3MzMzNDM5MjN9.oKcCSZ879vAEfR5crRnaK7Kv5TGus-j8p_xznbNLfVo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"PRD803\",\r\n    \"name\": \"Produit 3 updated\",\r\n    \"description\": \"Produit 3 \",\r\n    \"image\": null,\r\n    \"category\": \"Produit alimentaire\",\r\n    \"price\": 100,\r\n    \"quantity\": 20,\r\n    \"internalReference\": \"PRD803\",\r\n    \"shellId\": null,\r\n    \"inventoryStatus\": \"LOWSTOCK\",\r\n    \"rating\": 8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products/31974246542236886755933212986",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"31974246542236886755933212986"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/cart",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3MzM1MjAyMjYsImlzcyI6Imp3dC5qd3QiLCJleHAiOjE3MzM1MzgyMjZ9.M8SI70qjuSsASeGz5fHMVJsN5wCtJMPVJKG7A3CoS8o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cart:email=admin@admin.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cart:email=admin@admin.com"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/products",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"PRD802\",\r\n    \"name\": \"Produit 2 \",\r\n    \"description\": \"Produit 1 \",\r\n    \"image\": null,\r\n    \"category\": \"Produit alimentaire\",\r\n    \"price\": 100,\r\n    \"quantity\": 20,\r\n    \"internalReference\": \"PRD802\",\r\n    \"shellId\": null,\r\n    \"inventoryStatus\": \"INSTOCK\",\r\n    \"rating\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 21:00:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3.1974590638621296824826037231e+28,\n    \"code\": \"PRD802\",\n    \"name\": \"Produit 2 \",\n    \"description\": \"Produit 1 \",\n    \"image\": null,\n    \"category\": \"Produit alimentaire\",\n    \"price\": 100,\n    \"quantity\": 20,\n    \"internalReference\": \"PRD802\",\n    \"shellId\": 0,\n    \"inventoryStatus\": \"INSTOCK\",\n    \"rating\": 8,\n    \"createdAt\": \"2024-12-04T22:00:31.8942867\",\n    \"updatedAt\": null\n}"
+				},
+				{
+					"name": "Vous n'avez pas les droits nécessaires!",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"PRD801\",\r\n    \"name\": \"Produit 1 \",\r\n    \"description\": \"Produit 1 \",\r\n    \"image\": null,\r\n    \"category\": \"Produit alimentaire\",\r\n    \"price\": 100,\r\n    \"quantity\": 20,\r\n    \"internalReference\": \"PRD801\",\r\n    \"shellId\": null,\r\n    \"inventoryStatus\": \"INSTOCK\",\r\n    \"rating\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Dec 2024 19:27:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"path\": \"/api/products\",\n    \"message\": \"Vous n'avez pas les droits nécessaires! \",\n    \"statusCode\": 403,\n    \"localDateTime\": \"2024-12-05T20:27:56.0207569\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3MzM1MjAyMjYsImlzcyI6Imp3dC5qd3QiLCJleHAiOjE3MzM1MzgyMjZ9.M8SI70qjuSsASeGz5fHMVJsN5wCtJMPVJKG7A3CoS8o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"admin@admin.com\",\r\n    \"cartProducts\": [\r\n        {\r\n            \"product\": 31977805111913662343267901101,\r\n            \"quantity\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cart"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/products",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"PRD802\",\r\n    \"name\": \"Produit 2 \",\r\n    \"description\": \"Produit 1 \",\r\n    \"image\": null,\r\n    \"category\": \"Produit alimentaire\",\r\n    \"price\": 100,\r\n    \"quantity\": 20,\r\n    \"internalReference\": \"PRD802\",\r\n    \"shellId\": null,\r\n    \"inventoryStatus\": \"INSTOCK\",\r\n    \"rating\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 21:00:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3.1974590638621296824826037231e+28,\n    \"code\": \"PRD802\",\n    \"name\": \"Produit 2 \",\n    \"description\": \"Produit 1 \",\n    \"image\": null,\n    \"category\": \"Produit alimentaire\",\n    \"price\": 100,\n    \"quantity\": 20,\n    \"internalReference\": \"PRD802\",\n    \"shellId\": 0,\n    \"inventoryStatus\": \"INSTOCK\",\n    \"rating\": 8,\n    \"createdAt\": \"2024-12-04T22:00:31.8942867\",\n    \"updatedAt\": null\n}"
+				},
+				{
+					"name": "Vous n'avez pas les droits nécessaires!",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"PRD801\",\r\n    \"name\": \"Produit 1 \",\r\n    \"description\": \"Produit 1 \",\r\n    \"image\": null,\r\n    \"category\": \"Produit alimentaire\",\r\n    \"price\": 100,\r\n    \"quantity\": 20,\r\n    \"internalReference\": \"PRD801\",\r\n    \"shellId\": null,\r\n    \"inventoryStatus\": \"INSTOCK\",\r\n    \"rating\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Dec 2024 19:27:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"path\": \"/api/products\",\n    \"message\": \"Vous n'avez pas les droits nécessaires! \",\n    \"statusCode\": 403,\n    \"localDateTime\": \"2024-12-05T20:27:56.0207569\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/cart",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3MzM1MjAyMjYsImlzcyI6Imp3dC5qd3QiLCJleHAiOjE3MzM1MzgyMjZ9.M8SI70qjuSsASeGz5fHMVJsN5wCtJMPVJKG7A3CoS8o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"admin@admin.com\",\r\n    \"cartProducts\": [\r\n        {\r\n            \"product\": 31977805111913662343267901101,\r\n            \"quantity\": 15\r\n        },\r\n        {\r\n            \"product\": 31974584139265136117162379577,\r\n            \"quantity\": 20\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cart",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cart"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/api/products",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"PRD802\",\r\n    \"name\": \"Produit 2 \",\r\n    \"description\": \"Produit 1 \",\r\n    \"image\": null,\r\n    \"category\": \"Produit alimentaire\",\r\n    \"price\": 100,\r\n    \"quantity\": 20,\r\n    \"internalReference\": \"PRD802\",\r\n    \"shellId\": null,\r\n    \"inventoryStatus\": \"INSTOCK\",\r\n    \"rating\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 04 Dec 2024 21:00:32 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3.1974590638621296824826037231e+28,\n    \"code\": \"PRD802\",\n    \"name\": \"Produit 2 \",\n    \"description\": \"Produit 1 \",\n    \"image\": null,\n    \"category\": \"Produit alimentaire\",\n    \"price\": 100,\n    \"quantity\": 20,\n    \"internalReference\": \"PRD802\",\n    \"shellId\": 0,\n    \"inventoryStatus\": \"INSTOCK\",\n    \"rating\": 8,\n    \"createdAt\": \"2024-12-04T22:00:31.8942867\",\n    \"updatedAt\": null\n}"
+				},
+				{
+					"name": "Vous n'avez pas les droits nécessaires!",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"PRD801\",\r\n    \"name\": \"Produit 1 \",\r\n    \"description\": \"Produit 1 \",\r\n    \"image\": null,\r\n    \"category\": \"Produit alimentaire\",\r\n    \"price\": 100,\r\n    \"quantity\": 20,\r\n    \"internalReference\": \"PRD801\",\r\n    \"shellId\": null,\r\n    \"inventoryStatus\": \"INSTOCK\",\r\n    \"rating\": 8\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 05 Dec 2024 19:27:56 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"path\": \"/api/products\",\n    \"message\": \"Vous n'avez pas les droits nécessaires! \",\n    \"statusCode\": 403,\n    \"localDateTime\": \"2024-12-05T20:27:56.0207569\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/api/cart:id=675013e1f8ea3c57caf5127d",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3MzMzMjU5MjMsImlzcyI6Imp3dC5qd3QiLCJleHAiOjE3MzMzNDM5MjN9.oKcCSZ879vAEfR5crRnaK7Kv5TGus-j8p_xznbNLfVo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"PRD803\",\r\n    \"name\": \"Produit 3 updated\",\r\n    \"description\": \"Produit 3 \",\r\n    \"image\": null,\r\n    \"category\": \"Produit alimentaire\",\r\n    \"price\": 100,\r\n    \"quantity\": 20,\r\n    \"internalReference\": \"PRD803\",\r\n    \"shellId\": null,\r\n    \"inventoryStatus\": \"LOWSTOCK\",\r\n    \"rating\": 8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/products/31974246542236886755933212986",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"31974246542236886755933212986"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
